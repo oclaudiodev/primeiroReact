@@ -8,7 +8,7 @@ export default function Inicio() {
         <div>
         <div className="cima">
             <div className='p1'>
-                <img src="/src/assets/images/logo.png" height="60px"/>
+                <img src="/src/assets/images/renovLogo.png" height="60px"/>
                 <h1>React</h1>
                 <h1>FreiS</h1>
             </div>
