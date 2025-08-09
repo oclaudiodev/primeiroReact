@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    
+}
+.cima{
+    background-color: #6276f7;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.p1{
+    display: flex;
+    font-size: 6px;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.p2{
+    display: flex;
+    font-size: 6px;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F5F6FA;
+}
+.ex1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px;
+    border-bottom: 4px solid #ffce37;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.tudo{
+    background-color: #f5f6fa;
+}
+.triste{
+    background-color: #FFFFFF;
+    margin: 20px 35px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 50px;
+}
+.quadro{
+    background-color: #FFFFFF; 
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+.dono{
+    display: flex;
+    justify-content: center;
+}
+
+.fim0{
+    display: flex;
+    justify-content: center;
+    padding-left: 265px;
+}
+.tt{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin-left: 150px;
+    color: white;
+    background-color: #6276f7;
+}
+input{
+    width: 300px;
+    margin-bottom: 7px;
+    border-radius: 4px;
+}
