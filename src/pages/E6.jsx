@@ -31,27 +31,27 @@ function salario(){
                     <h1 className='e01'>Exercício 06 - Salário Líquido</h1>
             </div>
             <div className='triste'>
-                <p>Implementar um programa em Javascript para calcular o salário líquido.</p>
+                <p>Implemente um programa em javascript para calcular o salário líquido de um funcionário, a partir de seu salário base, do bônus mensal em porcentagem e do total de descontos em reais.</p>
             </div>
         
             <div className='maior'>
-                <div className='mini'>
+                <div className='mini2'>
                     <div className='cards'>
-                        <label className='tt'>Qual seu salário base?</label>
+                        <label className='tt'>Salário base</label>
                         <br/>
-                        <input className='inp2' value={base} onChange = {(e)=> setBase(e.target.value)}/>
+                        <input className='inp3' value={base} onChange = {(e)=> setBase(e.target.value)}/>
                     </div>
                     <br/>
                     <div className='cards'>
-                        <label className='tt'>Quantos porcento você recebeu em bônus mensal?</label>
+                        <label className='tt'>Bônus mensal em porcentagem</label>
                         <br/>
                         <input className='inp3' value={bonus} onChange = {(e)=> setBonus(e.target.value)}/>
                     </div>
                     <br/>
                     <div className='cards'>
-                        <label className='tt'>Quanto foi descontado?</label>
+                        <label className='tt'>Total em descontos</label>
                         <br/>
-                        <input className='inp2' value={desc} onChange = {(e)=> setDesc(e.target.value)}/>
+                        <input className='inp3' value={desc} onChange = {(e)=> setDesc(e.target.value)}/>
                         <br/>
                         <button onClick = {salario}>Calcule</button>
                     </div>

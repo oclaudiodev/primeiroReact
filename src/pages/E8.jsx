@@ -45,11 +45,15 @@ export default function E8(){
                     <h1 className='e01'>Exercício 08 - Temperatura</h1>
             </div>
             <div className='triste'>
-                <p>Implementar um programa em Javascript para gerar o diagnóstico de acordo com a temperatura do paciente.</p>
+                <p>Implementar um programa em javascript que a partir da temperatura, avalie a situação da pessoa conforme a tabela. Ao final, apresente a classificação</p>
+            </div>
+
+            <div className='meio'>
+                <img src="/src/assets/images/temps.png" height="130px"/>
             </div>
         
             <div className='dono'>
-                <div className='quadro'>
+                <div className={`quadro ${resultado === 'Febre' || resultado === 'Febre Alta' || resultado === 'Hipetermia' ? 'a' : ''}`}>
                     <label className='tt'>Qual sua temperatura atual?</label>
                     <br/>
                     <input value={temp} onChange = {(e)=> setTemp(e.target.value)}/>
@@ -58,9 +62,10 @@ export default function E8(){
                     <br/>
                 </div>
             </div>
-            <div className='fim0'>
-                <p>Sua temperatura atual é: {resultado}</p>
-            </div>
+            
+                <div className='fim0'>
+                    <p>Sua temperatura atual é: {resultado}</p>
+                </div>
             
         </div>
     )

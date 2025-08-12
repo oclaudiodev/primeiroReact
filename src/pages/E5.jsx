@@ -4,13 +4,22 @@ import './E5.scss'
 
 export default function E5(){
     const [resultado, setResultado] = useState(0)
+    const [resultado2, setResultadoo] = useState(0)
     const [trab, setTrab] = useState(0)
     const [prova, setProva] = useState(0)
     const [comp, setComp] = useState(0)
 
 function media(){
     let media = (Number(trab)+Number(prova)+Number(comp))/3
+    let ok =''
+    if (media>= 5 ){
+        ok = 'true'
+    }
+    else if(media<5){
+        ok = 'false'
+    }
     setResultado(media)
+    setResultadoo(ok)
 }
 
     return(
@@ -31,34 +40,34 @@ function media(){
                     <h1 className='e01'>Exercício 05 - Média de notas</h1>
             </div>
             <div className='triste'>
-                <p>Implementar um programa em Javascript para calcular a média dos alunos.</p>
+                <p>Implemente um programa em Javascript para verificar se um aluno passou ou não, baseado em 3 notas, considerando que a média mínima para passar é 6.</p>
             </div>
         
             <div className='maior'>
-                <div className='mini'>
+                <div className='mini2'>
                         <div className='cards'>
-                            <label className='tt'>Qual foi sua nota no trabalho?</label>
+                            <label className='tt'>Nota 1</label>
                             <br/>
-                            <input className='inp2' value={trab} onChange = {(e)=> setTrab(e.target.value)}/>
+                            <input className='inp3' value={trab} onChange = {(e)=> setTrab(e.target.value)}/>
                         </div>
                     <br/>
                     <div className='cards'>
-                        <label className='tt'>Qual foi sua nota na prova?</label>
+                        <label className='tt'>Nota 2</label>
                         <br/>
-                        <input className='inp2' value={prova} onChange = {(e)=> setProva(e.target.value)}/>
+                        <input className='inp3' value={prova} onChange = {(e)=> setProva(e.target.value)}/>
                     </div>
                     <br/>
                     <div className='cards'>
-                        <label className='tt'>Qual foi sua nota de comportamento?</label>
+                        <label className='tt'>Nota 3</label>
                         <br/>
-                        <input className= 'inp2'value={comp} onChange = {(e)=> setComp(e.target.value)}/>
+                        <input className= 'inp3'value={comp} onChange = {(e)=> setComp(e.target.value)}/>
                         <br/>
                         <button className='etn' onClick = {media}>Sua média</button>
                     </div>
                 </div>
             </div>
             <div className='fim0'>
-                <p>Sua média final é: {resultado}</p>
+                <p>Sua média final é: {resultado}<br/>O aluno passou? {resultado2}</p>
             </div>
             
         </div>
